@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="244" y="122.78860569715144"/>
         </scene>
-        <!--Meal View Controller-->
+        <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,11 +123,15 @@
                             <constraint firstItem="cXV-Wv-ekz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="amD-xg-e6a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vq0-Z0-SFe"/>
+                    <navigationItem key="navigationItem" title="New Meal" id="vq0-Z0-SFe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bqb-84-2oe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Pte-FN-066"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="OaQ-qd-f7v" id="zPm-mu-70M"/>
                         <outlet property="photoImageView" destination="H9e-jO-yQ3" id="YkB-Da-4Hc"/>
                         <outlet property="ratingControl" destination="ixb-oR-4fo" id="8si-Ws-wlV"/>
+                        <outlet property="saveButton" destination="Pte-FN-066" id="c3x-Xs-JGz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
