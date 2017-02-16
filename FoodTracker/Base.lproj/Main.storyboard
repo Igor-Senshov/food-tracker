@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="Vmu-pi-bvr">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="tT7-LY-EkF">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="AddItem" id="x3F-th-z6y"/>
+                                <segue destination="MXG-iR-4fk" kind="presentation" identifier="AddItem" id="x3F-th-z6y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -80,8 +80,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
-                                <rect key="frame" x="16" y="40" width="343" height="410"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
+                                <rect key="frame" x="16" y="84" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-qd-f7v">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -123,6 +123,7 @@
                             <constraint firstItem="cXV-Wv-ekz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="amD-xg-e6a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vq0-Z0-SFe"/>
                     <connections>
                         <outlet property="nameTextField" destination="OaQ-qd-f7v" id="zPm-mu-70M"/>
                         <outlet property="photoImageView" destination="H9e-jO-yQ3" id="YkB-Da-4Hc"/>
@@ -136,7 +137,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1996" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cfh-jX-vD3">
@@ -155,6 +156,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb7-zK-cfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-695.20000000000005" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q9Z-Rh-JRR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MXG-iR-4fk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AdB-pg-sHt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eXR-nm-83y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1g-d2-Ycg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>
