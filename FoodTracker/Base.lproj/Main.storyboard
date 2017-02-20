@@ -80,7 +80,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
                                 <rect key="frame" x="16" y="84" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-qd-f7v">
@@ -124,7 +124,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="vq0-Z0-SFe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bqb-84-2oe"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bqb-84-2oe">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="XQ6-dm-n1A"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Pte-FN-066">
                             <connections>
                                 <segue destination="QX2-Xq-pqq" kind="unwind" unwindAction="unwindToMealListWithSender:" id="xeT-Gq-GqP"/>
