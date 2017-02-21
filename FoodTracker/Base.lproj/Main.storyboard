@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="b2c-Jw-Npp" id="GLK-9c-3DW"/>
                                     <outlet property="photoImageView" destination="TOH-FR-uDr" id="zEI-66-LtN"/>
                                     <outlet property="ratingControl" destination="o6t-uP-ho1" id="XGZ-OB-EKo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="xpe-0t-Uao"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -80,7 +81,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-Wv-ekz">
                                 <rect key="frame" x="16" y="84" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-qd-f7v">
@@ -175,7 +176,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MXG-iR-4fk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AdB-pg-sHt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AdB-pg-sHt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -186,10 +187,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1g-d2-Ycg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1102" y="-248"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xpe-0t-Uao"/>
+    </inferredMetricsTieBreakers>
 </document>
