@@ -27,22 +27,34 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="TOH-FR-uDr">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="TOH-FR-uDr">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="X7H-PL-Nek"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-Jw-Npp">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-Jw-Npp">
                                             <rect key="frame" x="98" y="8" width="269" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o6t-uP-ho1" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o6t-uP-ho1" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <rect key="frame" x="98" y="37" width="252" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="o6t-uP-ho1" secondAttribute="bottom" constant="0.5" id="6Ql-b7-2vo"/>
+                                        <constraint firstItem="TOH-FR-uDr" firstAttribute="leading" secondItem="lRS-yT-Z4z" secondAttribute="leading" id="6g7-47-22l"/>
+                                        <constraint firstItem="b2c-Jw-Npp" firstAttribute="top" secondItem="lRS-yT-Z4z" secondAttribute="topMargin" id="6zX-vh-tD5"/>
+                                        <constraint firstItem="TOH-FR-uDr" firstAttribute="top" secondItem="lRS-yT-Z4z" secondAttribute="top" id="9jo-XU-MMD"/>
+                                        <constraint firstItem="b2c-Jw-Npp" firstAttribute="leading" secondItem="TOH-FR-uDr" secondAttribute="trailing" constant="8" symbolic="YES" id="bhG-Sm-mXE"/>
+                                        <constraint firstItem="b2c-Jw-Npp" firstAttribute="leading" secondItem="o6t-uP-ho1" secondAttribute="leading" id="i0Z-b8-RaU"/>
+                                        <constraint firstItem="b2c-Jw-Npp" firstAttribute="trailing" secondItem="lRS-yT-Z4z" secondAttribute="trailingMargin" id="kE1-7W-iTc"/>
+                                        <constraint firstItem="TOH-FR-uDr" firstAttribute="centerY" secondItem="lRS-yT-Z4z" secondAttribute="centerY" id="lmM-Ru-mxC"/>
+                                        <constraint firstItem="o6t-uP-ho1" firstAttribute="top" secondItem="b2c-Jw-Npp" secondAttribute="bottom" constant="8" symbolic="YES" id="ogx-eO-edx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="o6t-uP-ho1" secondAttribute="trailing" constant="17" id="orh-MI-cgo"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="b2c-Jw-Npp" id="GLK-9c-3DW"/>
@@ -176,7 +188,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MXG-iR-4fk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AdB-pg-sHt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AdB-pg-sHt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
