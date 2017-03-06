@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Enter meal name."; ObjectID = "OaQ-qd-f7v"; */
+"OaQ-qd-f7v.placeholder" = "Enter meal name.";
+
+/* Class = "UINavigationItem"; title = "Your Meals"; ObjectID = "Vmu-pi-bvr"; */
+"Vmu-pi-bvr.title" = "Your Meals";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "b2c-Jw-Npp"; */
+"b2c-Jw-Npp.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "New Meal"; ObjectID = "vq0-Z0-SFe"; */
+"vq0-Z0-SFe.title" = "New Meal";

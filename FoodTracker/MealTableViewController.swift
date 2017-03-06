@@ -155,15 +155,16 @@ class MealTableViewController: UITableViewController {
         let photo2 = UIImage(named: "meal2")
         let photo3 = UIImage(named: "meal3")
         
-        guard let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4) else {
+        // NSLocalizedString - localization text.
+        guard let meal1 = Meal(name: NSLocalizedString("meal1", value: "Caprese Salad", comment: "Sample meal #1 title."), photo: photo1, rating: 4) else {
             fatalError("Unable to instantiate meal1")
         }
         
-        guard let meal2 = Meal(name: "Chicken and Potatoes", photo: photo2, rating: 5) else {
+        guard let meal2 = Meal(name: NSLocalizedString("meal2", value: "Chicken and Potatoes", comment: "Sample meal #2 title."), photo: photo2, rating: 5) else {
             fatalError("Unable to instantiate meal2")
         }
         
-        guard let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 5) else {
+        guard let meal3 = Meal(name: NSLocalizedString("meal3", value: "Pasta with MeatBalls", comment: "Sample meal #3 title."), photo: photo3, rating: 5) else {
             fatalError("Unable to instantiate meal3")
         }
         
