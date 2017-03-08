@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D2377461E52029100ECE0DB /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2377451E52029100ECE0DB /* Meal.swift */; };
+		4DDF5A4C1E6EB96400B1D97F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDF5A4E1E6EB96400B1D97F /* Localizable.strings */; };
+		4DDF5A511E6EB96400B1D97F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDF5A531E6EB96400B1D97F /* InfoPlist.strings */; };
+		4DDF5A561E6EB96500B1D97F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDF5A581E6EB96500B1D97F /* InfoPlist.strings */; };
 		4DDFE41D1E4A13F300D114FC /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFE41C1E4A13F300D114FC /* RatingControl.swift */; };
 		4DE740661E3A50F1008AC2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE740651E3A50F1008AC2B8 /* AppDelegate.swift */; };
 		4DE740681E3A50F1008AC2B8 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE740671E3A50F1008AC2B8 /* MealViewController.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		4D2377451E52029100ECE0DB /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		4DDF5A4D1E6EB96400B1D97F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DDF5A521E6EB96400B1D97F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DDF5A571E6EB96500B1D97F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DDFE41C1E4A13F300D114FC /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		4DE740621E3A50F1008AC2B8 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE740651E3A50F1008AC2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 		4DE740641E3A50F1008AC2B8 /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4DDF5A531E6EB96400B1D97F /* InfoPlist.strings */,
+				4DDF5A4E1E6EB96400B1D97F /* Localizable.strings */,
 				4DE740651E3A50F1008AC2B8 /* AppDelegate.swift */,
 				4DE740671E3A50F1008AC2B8 /* MealViewController.swift */,
 				4DDFE41C1E4A13F300D114FC /* RatingControl.swift */,
@@ -106,6 +114,7 @@
 		4DE740791E3A50F2008AC2B8 /* FoodTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				4DDF5A581E6EB96500B1D97F /* InfoPlist.strings */,
 				4DE7407A1E3A50F2008AC2B8 /* FoodTrackerTests.swift */,
 				4DE7407C1E3A50F2008AC2B8 /* Info.plist */,
 			);
@@ -196,8 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE740701E3A50F2008AC2B8 /* LaunchScreen.storyboard in Resources */,
+				4DDF5A4C1E6EB96400B1D97F /* Localizable.strings in Resources */,
 				4DE7406D1E3A50F2008AC2B8 /* Assets.xcassets in Resources */,
 				4DE7406B1E3A50F2008AC2B8 /* Main.storyboard in Resources */,
+				4DDF5A511E6EB96400B1D97F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDF5A561E6EB96500B1D97F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4DDF5A4E1E6EB96400B1D97F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDF5A4D1E6EB96400B1D97F /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4DDF5A531E6EB96400B1D97F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDF5A521E6EB96400B1D97F /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DDF5A581E6EB96500B1D97F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDF5A571E6EB96500B1D97F /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		4DE740691E3A50F2008AC2B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

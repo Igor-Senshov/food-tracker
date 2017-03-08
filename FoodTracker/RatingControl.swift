@@ -91,7 +91,7 @@ import UIKit
             button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
             
             // Set the accessibility label.
-            button.accessibilityLabel = NSLocalizedString("button.accessibilityLabel", value: "Set \(index + 1) star rating", comment: "The accessibility label.")
+            button.accessibilityLabel = String(format:NSLocalizedString("button.accessibilityLabel", value: "Set %d star rating", comment: "The accessibility label."), index + 1)
             
             // Setup the button action.
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
@@ -128,8 +128,11 @@ import UIKit
                 valueString = NSLocalizedString("case 0", value: "No rating set.", comment: "Accessibility value string 0.")
             case 1:
                 valueString = NSLocalizedString("case 1", value: "1 star set.", comment: "Accessibility value string 1.")
+            // Needed for translation only.
+            case 5:
+                valueString = NSLocalizedString("case 5", value: "5 stars set.", comment: "Accessibility value string 5.")
             default:
-                valueString = NSLocalizedString("default.valueString", value: "\(rating) stars set.", comment: "Accessibility default value string.")
+                valueString = String(format: NSLocalizedString("default.valueString", value: "%d stars set.", comment: "Accessibility default value string."), rating)
             }
             
             // Assign the hint string and value string.

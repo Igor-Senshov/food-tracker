@@ -1,0 +1,24 @@
+/* The accessibility label. */
+"button.accessibilityLabel" = "Поставить рейтинг %d";
+
+/* Accessibility value string 0. */
+"case 0" = "Рейтинг не поставлен.";
+
+/* Accessibility value string 1. */
+"case 1" = "1 звезда поставлена.";
+
+/* Accessibility value string 5. */
+"case 5" = "5 звёзд поставлено.";
+
+/* Accessibility default value string. */
+"default.valueString" = "%d звёзды поставлено.";
+
+/* Sample meal #1 title. */
+"meal1" = "Салат Капрезе";
+
+/* Sample meal #2 title. */
+"meal2" = "Картошка с курицей";
+
+/* Sample meal #3 title. */
+"meal3" = "Макароны с фрикадельками";
+
