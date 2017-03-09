@@ -1,0 +1,27 @@
+/* The accessibility label. */
+"button.accessibilityLabel" = "Iestatiet vērtējumu %d";
+
+/* Accessibility value string 0. */
+"case 0" = "Vērtējums nav iestatīts.";
+
+/* Accessibility value string 1. */
+"case 1" = "1 zvaigzne ir noteikta.";
+
+/* Accessibility value string 5. */
+"case 5" = "5 zvaigznes ir noteiktas.";
+
+/* Accessibility default value string. */
+"default.valueString" = "%d zvaigznes ir noteiktas.";
+
+/* Accessibility hint string. */
+"hintString" = "Nospiediet, lai atjaunotu vērtējumu uz nulli.";
+
+/* Sample meal #1 title. */
+"meal1" = "Caprese salāts";
+
+/* Sample meal #2 title. */
+"meal2" = "Cālis un kartupeļi";
+
+/* Sample meal #3 title. */
+"meal3" = "Makaroni ar frikadelēm";
+

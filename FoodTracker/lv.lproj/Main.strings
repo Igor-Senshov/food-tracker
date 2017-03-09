@@ -1,12 +1,12 @@
+/* Class = "UITextField"; placeholder = "Enter meal name."; ObjectID = "OaQ-qd-f7v"; Note = "Enter meal name - text field"; */
+"OaQ-qd-f7v.placeholder" = "Ievadiet maltītes nosaukumu.";
 
-/* Class = "UITextField"; placeholder = "Enter meal name."; ObjectID = "OaQ-qd-f7v"; */
-"OaQ-qd-f7v.placeholder" = "Enter meal name.";
+/* Class = "UINavigationItem"; title = "Your Meals"; ObjectID = "Vmu-pi-bvr"; Note = "Meal list title"; */
+"Vmu-pi-bvr.title" = "Jūsu maltītes";
 
-/* Class = "UINavigationItem"; title = "Your Meals"; ObjectID = "Vmu-pi-bvr"; */
-"Vmu-pi-bvr.title" = "Your Meals";
-
-/* Class = "UILabel"; text = "Label"; ObjectID = "b2c-Jw-Npp"; */
-"b2c-Jw-Npp.text" = "Label";
+/* Class = "UILabel"; text = "Label"; ObjectID = "b2c-Jw-Npp"; Note = "Name Label"; */
+"b2c-Jw-Npp.text" = "Etiķete";
 
 /* Class = "UINavigationItem"; title = "New Meal"; ObjectID = "vq0-Z0-SFe"; */
-"vq0-Z0-SFe.title" = "New Meal";
+"vq0-Z0-SFe.title" = "Jauna maltīte";
+
